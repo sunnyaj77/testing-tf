@@ -36,7 +36,7 @@ jobs:
       # Terraform Init
       - name: Terraform Init
         id: init
-        run: terraform init
+        run: terraform init --migrate-state
 
       - name: terraform plan for apply
         id: plan-apply
