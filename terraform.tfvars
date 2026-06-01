@@ -1,0 +1,9 @@
+aws_region              = "us-east-1"
+environment             = "dev"
+project_name            = "my-application"
+instance_type           = "t3.micro"
+web_tier_instance_count = 2
+app_tier_instance_count = 2
+allowed_ssh_cidr        = ["0.0.0.0/32"]
+alb_allowed_cidr_blocks = ["0.0.0.0/0"]
+s3_bucket_name          = "my-app-bucket"
