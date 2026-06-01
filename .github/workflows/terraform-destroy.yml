@@ -38,11 +38,5 @@ jobs:
         id: init
         run: terraform init --migrate-state
 
-      - name: terraform plan for apply
-        id: plan-apply
-        run: terraform plan
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-
       - name: terraform apply
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: terraform destroy --auto-approve
