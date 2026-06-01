@@ -1,7 +1,7 @@
 aws_region              = "us-east-1"
 environment             = "dev"
 project_name            = "my-application"
-instance_type           = "t3.micro"
+instance_type           = "t3.large"
 web_tier_instance_count = 2
 app_tier_instance_count = 2
 allowed_ssh_cidr        = ["0.0.0.0/32"]
