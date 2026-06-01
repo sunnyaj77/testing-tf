@@ -52,14 +52,4 @@ jobs:
       - name: Terraform Plan
         id: plan
         run: terraform plan
-        if: github.event_name == 'pull_request'
-        
-      # Terraform Apply (on main push)
-      - name: Terraform Plan for Apply
-        id: plan-apply
-        run: terraform plan -no-color
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-
-      - name: Terraform Apply
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        run: terraform apply -auto-approve -no-color
+        if: github.event_name == 'push'
