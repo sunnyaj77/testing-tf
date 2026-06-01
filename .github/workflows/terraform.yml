@@ -61,4 +61,4 @@ jobs:
 
       - name: terraform apply
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        run: terraform apply
+        run: terraform apply --auto-approve
