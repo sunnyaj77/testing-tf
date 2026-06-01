@@ -1,4 +1,4 @@
-aws_region              = "us-east-1"
+aws_region              = "eu-central-1"
 environment             = "dev"
 project_name            = "my-application"
 instance_type           = "t3.micro"
